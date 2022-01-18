@@ -162,6 +162,7 @@ body {
 
 /* ------------------- about ------------------- */
 #about {
+  padding: 130px 0px;
   min-height: 100vh;
   background-color: #fafafa;
   color: #202020;
@@ -187,9 +188,6 @@ body {
 
 /* ------------------- Services ------------------- */
 #services {
-  padding-top: 130px;
-  height: 100vh;
-  background-color: #f6f6f6;
 }
 
 /* ------------------- skills ------------------- */
@@ -225,11 +223,6 @@ body {
 }
 
 /* ------------------- Services ------------------- */
-/* #contact{
-  padding-top: 130px;
-  height: 100vh;
-
-} */
 
 /* ------------------- contact ------------------- */
 #contact {
@@ -237,7 +230,7 @@ body {
   align-items: center;
   position: relative;
   /* min-height: 100vh; */
-  padding: 100px 0;
+  padding: 130px 0;
   background-color: #fafafa;
 }
 
