@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::selection {
+  background: rgb(0, 123, 255, 0.3);
+}
+:root {
+  --animate-delay: 0.5s;
+}
+
+/* #202020
+#fafafa
+#f1f1f1
+#fbfcf8 
+#503ad5
+
+
+*/
+
+/* ------------ Global --------------- */
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.active {
+  color: #0b5ed7;
+}
+
+#home,
+#about,
+#services {
+  padding-top: 100px;
+}
+
+.icon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.active_link {
+  border-bottom: 1px solid #503ad5;
+  transition: all 0.2s;
+}
+
+.nav_btn {
+  transition: all 0.2s;
+}
+
+.hover {
+  transition: 0.3s;
+}
+.hover:hover {
+  transform: translateY(-10px);
+}
+
+/* --------- nav ------------------ */
+.navbar {
+  /* background: blue; */
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky {
+  background: #fafafa;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: #0b5ed7;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list {
+  display: inline-flex;
+}
+.menu-list li {
+  list-style: none;
+}
+.menu-list li a {
+  color: #252525;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover {
+  color: #0b5ed7;
+}
+
+/* ------------------- Home ------------------- */
+#home {
+  height: 100vh;
+  background-color: #f6f6f6;
+  padding-top: 130px;
+  color: #252525;
+}
+
+#home .name {
+  color: #0b5ed7;
+}
+
+#home .next_icon-section {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+}
+#home .next_icon {
+  font-size: 40px;
+  color: #fafafa;
+}
+#home .btn-outlined-primary {
+  border: 2px solid #0b5ed7;
+}
+
+#home .img_box {
+  display: flex;
+  justify-content: center;
+}
+
+#home .home_img {
+  width: 50%;
+}
+
+/* ------------------- about ------------------- */
+#about {
+  min-height: 100vh;
+  background-color: #fafafa;
+  color: #202020;
+  /* font-size: 50%; */
+}
+
+#about .img_border {
+  border: 20px solid rgb(226, 226, 226);
+  border-radius: 5px;
+  text-align: center;
+  width: 75%;
+}
+
+#about .header::after {
+  content: " ";
+  height: 3px;
+  border-radius: 50px;
+  width: 100px;
+  display: block;
+  margin: 20px auto 0 auto;
+  background-color: rgb(180, 180, 180);
+}
+
+/* ------------------- Services ------------------- */
+#services {
+  padding-top: 130px;
+  height: 100vh;
+  background-color: #f6f6f6;
+}
+
+/* ------------------- skills ------------------- */
+#skills {
+  padding: 130px 0px;
+  /* height: 100vh; */
+  background-color: #f6f6f6;
+}
+#skills .header::after {
+  content: " ";
+  height: 3px;
+  border-radius: 50px;
+  width: 100px;
+  display: block;
+  margin: 20px auto 0 auto;
+  background-color: rgb(180, 180, 180);
+}
+#skills .list-group {
+  transition: 0.5s;
+}
+
+#skills .list-group:hover {
+  transform: scale(1.05);
+}
+
+.skill-card {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px #dddddd;
+  text-align: center;
+  color: #7e7e7e;
+}
+
+/* ------------------- Services ------------------- */
+/* #contact{
+  padding-top: 130px;
+  height: 100vh;
+
+} */
+
+/* ------------------- contact ------------------- */
+#contact {
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* min-height: 100vh; */
+  padding: 100px 0;
+  background-color: #fafafa;
+}
+
+#contact .header::after {
+  content: " ";
+  height: 3px;
+  border-radius: 50px;
+  width: 100px;
+  display: block;
+  margin: 20px auto 0 auto;
+  background-color: rgb(180, 180, 180);
+}
+
+#contact i {
+  font-size: 200%;
+  color: #202020;
+}
+
+/* -------------------- footer -------------------------- */
+footer {
+  /* position: absolute; */
+  /* left: 0;
+  right: 0;
+  bottom: 0; */
+  background: #333333;
+  padding: 40px;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+@media (max-width: 1230px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled {
+    overflow: hidden;
+  }
+  .icon {
+    display: block;
+  }
+  .icon.hide {
+    display: none;
+  }
+  .navbar .menu-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list {
+    left: 0%;
+  }
+  .navbar .menu-list li {
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a {
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a {
+    margin-left: 0px;
+  }
+  #home .img_box {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 380px) {
+  .menu-list li a {
+    color: #fafafa;
+  }
+  #home .next_icon {
+    bottom: 30px;
+  }
+  .navbar .logo a {
+    font-size: 27px;
+  }
+  #about .img_border {
+    width: 70%;
+    margin: auto;
+  }
+  #about {
+    padding-top: 10px;
+  }
+
+  #contact {
+    padding-top: 60px;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 25ch;
+  }
+}
+@keyframes crow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  #home .home_img {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #home .home_img {
+    width: 75%;
+  }
+}
